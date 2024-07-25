@@ -21,6 +21,13 @@ const App = () => {
     setTasks(newTasks);
   };
 
+  const handleStatusChange = (taskIndex, newStatus) => {
+    const newTasks = tasks.map((task, index) =>
+      index === taskIndex ? { ...task, status: newStatus } : task
+    );
+    setTasks(newTasks);
+  };
+
   return (
     <div className="app">
       <TaskForm setTasks={setTasks} />
@@ -31,6 +38,7 @@ const App = () => {
           tasks={tasks}
           status="todo"
           handleDelete={handleDelete}
+          handleStatusChange={handleStatusChange}
         />
         <TaskColumn
           title="Doing"
@@ -38,6 +46,7 @@ const App = () => {
           tasks={tasks}
           status="doing"
           handleDelete={handleDelete}
+          handleStatusChange={handleStatusChange}
         />
         <TaskColumn
           title="Done"
@@ -45,6 +54,7 @@ const App = () => {
           tasks={tasks}
           status="done"
           handleDelete={handleDelete}
+          handleStatusChange={handleStatusChange}
         />
       </main>
     </div>

@@ -1,9 +1,9 @@
-// TaskColumn.jsx
+// components/TaskColumn.jsx
 import React from "react";
 import "./TaskColumn.css";
 import TaskCard from "./TaskCard";
 
-const TaskColumn = ({ title, icon, tasks, status, handleDelete }) => {
+const TaskColumn = ({ title, icon, tasks, status, handleDelete, handleStatusChange }) => {
   return (
     <section className="task_column">
       <h2 className="task_column_heading">
@@ -18,7 +18,9 @@ const TaskColumn = ({ title, icon, tasks, status, handleDelete }) => {
               title={task.task}
               tags={task.tags}
               handleDelete={handleDelete}
+              handleStatusChange={handleStatusChange}
               index={index}
+              status={status}
             />
           )
       )}
