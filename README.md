@@ -3,7 +3,10 @@
 -----------------------------------
 
 
-![Screenshot 2024-07-27 192623](https://github.com/user-attachments/assets/fb2ecb67-f5a8-4958-b76d-5569180587a7)
+![Screenshot 2024-08-05 233532](https://github.com/user-attachments/assets/37e34f32-db7a-4db7-9749-60e116f773e2)
 
 
 ---------------------------
+
+
+![Screenshot 2024-08-05 233910](https://github.com/user-attachments/assets/3fa2f4a1-2072-4f43-a208-d776196e721d)
