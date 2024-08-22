@@ -23,6 +23,10 @@
   margin: 20px 0;
 }
 
+.app_main{
+  margin-top: 40px;
+}
+
 /* Mobile Styles */
 @media (min-width: 768px) {
   .task_column {
